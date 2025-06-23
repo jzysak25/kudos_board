@@ -7,6 +7,7 @@ const { parse } = require("dotenv");
 
 router.get("/", async (req, res) => {
   const kudo_board = await prisma.Kudos_Board.findMany();
+  // try/catch block to handle any errors
   res.json(kudo_board);
 });
 
