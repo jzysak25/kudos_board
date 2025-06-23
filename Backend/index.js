@@ -10,5 +10,6 @@ app.use(express.json());
 app.use("/Kudos_Board", KudosRoutes);
 
 app.listen(PORT, () =>
+// Use console.info instead
   console.log(`Example app listening on port http://localhost:${PORT}`)
 );
